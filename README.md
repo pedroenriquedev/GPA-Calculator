@@ -1,6 +1,6 @@
 # GPA Calculator
 
-App that allows users to calculate their Grade Point Average (GPA) across multiple semesters and courses. Users can input their grades and credit hours for each course, and the app will automatically calculate their GPA based on the user's inputs.
+App that allow users to calculate their Grade Point Average (GPA) across multiple semesters and courses. Users can input their grades and credit hours for each course, and the app will automatically calculate their GPA based on the user's inputs.
 
 ## Tech Stack
 
