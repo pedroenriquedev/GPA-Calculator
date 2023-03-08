@@ -12,7 +12,7 @@ www.tobeworked.com
 
 #### Showcase
 
-![GPA Calculator gif demo](demo/demo.gif)
+![GPA Calculator gif demo](demo/Animation.gif)
 
 ## Installation
 
