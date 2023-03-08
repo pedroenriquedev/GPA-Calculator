@@ -18,6 +18,10 @@ www.tobeworked.com
 
 Simply clone the repo and run the html file on the browser. If you wish to make any changes to the scss file, install a SASS compiler on the code editor of your preference.
 
+## Credits
+
+The overall design was inspired on https://www.cssdesignawards.com/sites/gpa-calculator/32699/.
+
 ## Support
 
 For support, please email pedroenriquedev@gmail.com.
