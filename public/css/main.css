@@ -3,28 +3,23 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   font-size: 62.5%;
 }
-
 @media (max-width: 37.5em) {
   html {
     font-size: 56.15%;
   }
 }
-
 @media (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
 }
-
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -32,7 +27,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
@@ -42,16 +37,13 @@ body {
   width: 60%;
   margin: 7rem auto;
   border-radius: 12px;
-  -webkit-box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
-          box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
+  box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
 }
-
 @media (max-width: 56.25em) {
   .main {
     width: 85%;
   }
 }
-
 @media (max-width: 37.5em) {
   .main {
     width: 95%;
@@ -62,7 +54,6 @@ body {
   padding: 4rem;
   position: relative;
 }
-
 .groupList > .btn {
   margin: 3rem 0;
   font-size: 1.7rem;
@@ -73,152 +64,115 @@ body {
   border-bottom: 1px solid #eee;
   padding-bottom: 3rem;
 }
-
 .group:not(:first-of-type) {
   margin-top: 4rem;
 }
-
 .group__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 }
-
 .group__header .remove {
   color: #4A5B7D;
   border: 1px solid #4A5B7D;
 }
-
 .group__items {
   list-style-type: none;
 }
-
 .group__partial {
   display: inline-block;
   margin-top: 3rem;
   margin-right: 3rem;
 }
-
 .group__partial div {
-  margin-left: .2rem;
+  margin-left: 0.2rem;
   font-weight: bold;
   display: inline-block;
 }
 
 .item {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-
 @media (max-width: 37.5em) {
   .item {
-    -ms-grid-columns: 15rem 8rem 11rem 1fr;
-        grid-template-columns: 15rem 8rem 11rem 1fr;
+    grid-template-columns: 15rem 8rem 11rem 1fr;
   }
 }
-
 .item__name, .item__select, .item__value {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border: 1px solid #eee;
   border-bottom: none;
 }
-
 .item:first-of-type input:first-of-type {
   border-top-left-radius: 7px;
 }
-
 .item:first-of-type input:last-of-type {
   border-top-right-radius: 7px;
 }
-
 .item:last-of-type input {
   border-bottom: 1px solid #eee;
 }
-
 .item:last-of-type input:first-of-type {
   border-bottom-left-radius: 7px;
 }
-
 .item:last-of-type input:last-of-type {
   border-bottom-right-radius: 7px;
 }
-
 .item:last-of-type select {
   border-bottom: 1px solid #eee;
 }
-
 .item__select, .item__value {
   border-left: none;
 }
-
 .item button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .hover ~ ul li button {
-  color: #f82e2e;
-  border: 1px solid #f82e2e;
+  color: rgb(248, 46, 46);
+  border: 1px solid rgb(248, 46, 46);
 }
 
 .remove {
   background: none;
-  border: 1px solid #c2c2c2;
-  color: #c2c2c2;
+  border: 1px solid rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
   border-radius: 100%;
   cursor: pointer;
   margin-left: auto;
   width: 3rem;
   height: 3rem;
 }
-
 .remove i {
   pointer-events: none;
 }
-
 .remove:focus {
   outline: none;
 }
-
 .remove:hover {
-  color: #f82e2e;
-  border: 1px solid #f82e2e;
+  color: rgb(248, 46, 46);
+  border: 1px solid rgb(248, 46, 46);
 }
 
 .btn {
   padding: 1rem 1.7rem;
   background: none;
   border: none;
-  border: 1px solid #0099ff;
-  color: #0099ff;
+  border: 1px solid rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
   border-radius: 200px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .1s;
-  transition: -webkit-transform .1s;
-  transition: transform .1s;
-  transition: transform .1s, -webkit-transform .1s;
+  transition: transform 0.1s;
 }
-
 .btn:focus {
   outline: none;
 }
-
 .btn:hover {
-  -webkit-transform: translateX(-4px);
-          transform: translateX(-4px);
+  transform: translateX(-4px);
 }
-
 .btn i {
   margin-right: 10px;
   pointer-events: none;
@@ -227,39 +181,26 @@ body {
 .totals {
   width: 180px;
   background: #fff;
-  -webkit-box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
-          box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
+  box-shadow: rgba(7, 29, 63, 0.125) 0px 4px 16px 0px;
   height: 180px;
   border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   right: 3%;
   bottom: 3%;
 }
-
 @media (max-width: 56.25em) {
   .totals {
     width: 130px;
     height: 130px;
   }
 }
-
 .totals__value {
   font-size: 3.4rem;
 }
-
 .totals__label {
   font-size: 1.4rem;
 }
@@ -272,15 +213,13 @@ body {
   overflow: hidden;
   --percentage: 0;
 }
-
 @media (max-width: 56.25em) {
   .semi-donut {
     width: 123px;
   }
 }
-
 .semi-donut::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 6%;
@@ -289,14 +228,11 @@ body {
   border: 14px solid;
   border-color: #eee #eee #30CFB3 #30CFB3;
   border-radius: 50%;
-  -webkit-transform: rotate(calc( 1deg * ( -45 + var(--percentage) * 1.8 )));
-          transform: rotate(calc( 1deg * ( -45 + var(--percentage) * 1.8 )));
+  transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
 }
-
 @media (max-width: 56.25em) {
   .semi-donut::after {
     width: 123px;
     height: 123px;
   }
 }
-/*# sourceMappingURL=main.css.map */

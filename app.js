@@ -63,6 +63,7 @@ function setInputEventListener() {
 groupList.addEventListener("click", (e) => {
   let btn = e.target;
   let inputs = getInputs();
+
   if (btn.classList.contains("addCourseBtn")) {
     let course = `<li class="item" id="item-0">
         <input type="text" placeholder="Course name" class="item__name">
@@ -87,25 +88,20 @@ groupList.addEventListener("click", (e) => {
     let el = btn.parentNode.querySelector(".group__items");
 
     el.insertAdjacentHTML("beforeend", course);
-    setInputEventListener();
   }
 
   if (btn.classList.contains("removeItem")) {
     btn.parentNode.parentNode.removeChild(btn.parentNode);
-    setInputEventListener();
   }
 
   if (btn.classList.contains("removeSemester")) {
-    console.log(
-      btn.parentNode.parentNode.parentNode.removeChild(
-        btn.parentNode.parentNode
-      )
-    );
+    btn.parentNode.parentNode.parentNode.removeChild(btn.parentNode.parentNode);
   }
 
   if (btn.classList.contains("addSemester")) {
     newSemester(btn, inputs);
   }
+  setInputEventListener();
 });
 
 function newSemester(btn, inputs) {
@@ -245,16 +241,5 @@ function calcGpa(obj) {
 
   //total grade points / credits attempted
 }
-//console.log(allInputValue);
-
-/*
-button.addEventListener('mouseenter',() => {
-    button.parentNode.classList.add('hover');
-});
-
-button.addEventListener('mouseout',() => {
-    button.parentNode.classList.remove('hover');
-});
-*/
 
 init();
